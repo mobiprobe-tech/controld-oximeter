@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.controld.oximeter"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 4
+        versionName "1.0.3"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+    implementation 'com.firebaseui:firebase-ui-auth:6.1.0'
+    implementation "com.google.firebase:firebase-auth:19.3.0"
+
+    // Required only if Facebook login support is required
+    implementation 'com.facebook.android:facebook-android-sdk:5.12.1'
+
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "androidx.legacy:legacy-support-v13:1.0.0"
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    implementation 'com.google.android.material:material:1.2.0-alpha05'
+    implementation 'androidx.navigation:navigation-fragment:2.2.1'
+    implementation 'androidx.navigation:navigation-ui:2.2.1'
+
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+
+    //Work Manager
+    implementation 'androidx.work:work-runtime:2.3.4'
+
+    // Graph View in Session Details
+    implementation 'com.jjoe64:graphview:4.2.2'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    // Lifecycle components
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.archLifecycleVersion"
+    // implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$rootProject.archLifecycleVersion"
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime:$rootProject.archLifecycleVersion"
+
+    // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$rootProject.savedstate_version"
+
+    // Annotation processor
+    // annotationProcessor "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
+    // alternately - if using Java8, use the following instead of lifecycle-compiler
+    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.archLifecycleVersion"
+
+    // Room components
+    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+// Testing
+    androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
+}

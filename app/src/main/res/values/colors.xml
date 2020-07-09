@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <color name="colorPrimary">#E0E0E0</color>
+    &lt;!&ndash;<color name="colorPrimary">#F5F5F5</color>&ndash;&gt;
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#009688</color>-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorOffWhite">#f2f2f2</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorBorderLine">#bdbdbd</color>
+    <color name="colorRed">#d50000</color>
+    <color name="color_dialog_background_transparent">#48000000</color>
+    <color name="waveform_background">#FFFFFF</color>
+    <color name="waveform_lineColor">#a5c8ff</color>
+    <color name="colorBlue">#2b387c</color>
+    <color name="colorBlueDark">#303F9F</color>
+    <color name="bloodColor">#8a0303</color>
+    <color name="colorGreen">#108B50</color>
+    <color name="colorGreyLight">#d6d6d6</color>
+    <!--<color name="window_background">#FAFAFA</color>-->
+
+
+
+    <!--New Colors-->
+    <color name="colorPrimary">#e3ad31</color>
+    <color name="colorPrimaryDark">#cc9933</color>
+    <color name="colorAccent">#3167e3</color>
+    <color name="colorPrimaryLight">#ecc874</color>
+    <color name="window_background">#f2f2f2</color>
+
+</resources>

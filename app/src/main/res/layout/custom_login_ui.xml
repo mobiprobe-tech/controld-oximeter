@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background_image"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher_round"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_phone_login"
+        style="@style/FirebaseUI.Button.AccountChooser.PhoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="210dp"
+        android:minHeight="?attr/actionBarSize"
+        android:text="@string/sign_in_with_phone" />
+
+    <Button
+        android:id="@+id/btn_google_login"
+        style="@style/FirebaseUI.Button.AccountChooser.GoogleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:minWidth="210dp"
+        android:minHeight="?attr/actionBarSize"
+        android:text="@string/sign_in_with_google"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_facebook_login"
+        style="@style/FirebaseUI.Button.AccountChooser.FacebookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:minWidth="210dp"
+        android:minHeight="?attr/actionBarSize"
+        android:text="@string/sign_in_with_facebook"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

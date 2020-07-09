@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="name_max_length">50</integer>
+    <integer name="email_max_length">50</integer>
+    <integer name="phone_max_length">13</integer>
+    <integer name="phone_min_length">10</integer>
+    <integer name="height_max_length">6</integer>
+    <integer name="weight_max_length">6</integer>
+    <integer name="blood_group_max_length">3</integer>
+    <integer name="max_user_age">-120</integer>
+    <integer name="single_line">1</integer>
+    <integer name="max_record_session_time_minutes">3</integer>
+
+</resources>
